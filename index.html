@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Disney Character Quiz</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Discover Your Disney Character</h1>
+    <p class="question">Which of the following activities sounds like the most fun to you?</p>
+    <div class="options">
+      <input type="radio" id="singing" name="activity" value="singing">
+      <label for="singing">Singing</label>
+
+      <input type="radio" id="exploring" name="activity" value="exploring">
+      <label for="exploring">Exploring</label>
+
+      <input type="radio" id="makingFriends" name="activity" value="making new friends">
+      <label for="makingFriends">Making New Friends</label>
+
+      <input type="radio" id="solvingMysteries" name="activity" value="solving mysteries">
+      <label for="solvingMysteries">Solving Mysteries</label>
+    </div>
+
+    <p class="question">On a scale of 1 to 10, how much do you enjoy singing along to your favorite Disney songs?</p>
+    <input type="number" id="answer2" placeholder="Your answer">
+
+    <p class="question">Which color do you find most enchanting?</p>
+    <input type="text" id="answer3" placeholder="Your answer">
+
+    <button id="submitBtn">Discover Now</button>
+
+    <div id="result"></div>
+    <div id="error" class="error"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
